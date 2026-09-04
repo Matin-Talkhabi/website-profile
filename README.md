@@ -17,7 +17,7 @@ Designed with a **Linear & Raycast-inspired cyber-minimalist aesthetic**, featur
   - `46+` Repositories & Open Source Systems
   - `4x` Quera College 100% Perfect Score Certifications
   - `1st` National Elites Foundation Scholarship Recipient
-  - `-95%` Database Query Bottleneck Elimination
+  - `3+` Years Active Engineering Experience
 - **Featured Engineering Projects**: Flagship highlights including Royal Novin E-commerce Ecosystem, Digikala Warehouse Capacity Monitor, Dong-Bot, auto-daily-selfie, Professional-DNS-Tool, and leetcode-solutions.
 - **Tech Stack Matrix**: Categorized tech stack chips (Backend & Architecture, Frontend & Web UI, Core Languages, DevOps & Automation).
 - **Career & Education Timeline**: Engineering milestones at Royal Novin, Salafchegan Special Economic Zone, and B.Sc. Computer Engineering at University of Qom.

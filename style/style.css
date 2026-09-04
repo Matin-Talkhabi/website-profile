@@ -306,6 +306,14 @@ html[lang="fa"], html[dir="rtl"] {
     flex-direction: column;
 }
 
+.hero-content-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
 /* 1. Hero Identity Bento Card (Col 8, Row 1) */
 .bento-hero {
     grid-column: span 8;
@@ -1522,8 +1530,43 @@ html[lang="fa"] .projects-search-input {
     50% { opacity: 0; }
 }
 
-/* Responsive Adaptations */
+/* Masterpiece Footer */
+.masterpiece-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 0.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--border-glass);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+}
+
+.footer-copy {
+    display: flex;
+    align-items: center;
+}
+
+.footer-shortcuts {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+/* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
+    .masterpiece-wrapper {
+        width: 94%;
+        margin-top: 5.8rem;
+    }
     .bento-hero {
         grid-column: span 12;
     }
@@ -1545,36 +1588,360 @@ html[lang="fa"] .projects-search-input {
     }
 }
 
+/* Mobile & Small Tablet (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Top Navbar */
     .top-navbar {
         width: 95%;
         padding: 0 0.85rem;
+        height: 52px;
+        top: 0.65rem;
     }
     .nav-center-stats {
-        display: none;
+        display: none !important;
     }
+    .nav-actions {
+        gap: 0.35rem;
+    }
+    .nav-btn {
+        padding: 0.3rem 0.65rem;
+        font-size: 0.75rem;
+    }
+    .nav-btn.icon-only {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Masterpiece Wrapper */
+    .masterpiece-wrapper {
+        width: 94%;
+        margin: 5rem auto 2.5rem;
+        gap: 1.15rem;
+    }
+
+    /* Bento Cards Base */
+    .bento-card {
+        padding: 1.35rem;
+        border-radius: var(--radius-lg);
+    }
+
+    /* Hero Bento */
     .bento-hero {
-        flex-direction: column;
+        padding: 1.6rem 1.25rem;
+    }
+    .hero-content-layout {
+        flex-direction: column !important;
         text-align: center;
         align-items: center;
-        padding: 1.75rem 1.25rem;
+        gap: 1.25rem;
+    }
+    .hero-avatar-wrap {
+        width: 105px;
+        height: 105px;
     }
     .hero-text-content {
-        align-items: center;
+        align-items: center !important;
+        text-align: center;
+        width: 100%;
     }
     html[lang="fa"] .hero-text-content {
-        align-items: center;
+        align-items: center !important;
+        text-align: center;
+    }
+    .hero-status-row {
+        justify-content: center;
+        gap: 0.45rem;
     }
     .hero-title {
         font-size: 1.75rem;
+        text-align: center;
     }
+    .hero-typewriter {
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+    .hero-bio {
+        text-align: center;
+        font-size: 0.86rem;
+        max-width: 100%;
+        margin-bottom: 1.15rem;
+    }
+    .hero-social-row {
+        justify-content: center;
+        gap: 0.45rem;
+        width: 100%;
+    }
+    .social-pill-btn {
+        padding: 0.32rem 0.65rem;
+        font-size: 0.76rem;
+    }
+
+    /* Key Metrics */
     .bento-metrics {
         grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
     }
-    .palette-overlay {
-        padding-top: 6vh;
+    .metric-box {
+        padding: 0.85rem;
+    }
+    .metric-number {
+        font-size: 1.5rem;
+    }
+    .metric-label {
+        font-size: 0.72rem;
+    }
+
+    /* Featured Projects */
+    .featured-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+    .bento-header-row {
+        flex-wrap: wrap;
+        gap: 0.65rem;
+    }
+
+    /* Timeline */
+    .timeline-meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.15rem;
+    }
+    .timeline-item {
+        padding-left: 1.25rem;
+    }
+    html[lang="fa"] .timeline-item {
+        padding-left: 0;
+        padding-right: 1.25rem;
+    }
+
+    /* Modals & Overlays */
+    .modal-overlay {
+        padding: 0.65rem;
+    }
+    .modal-card {
+        max-height: 92vh;
+        border-radius: var(--radius-lg);
+    }
+    .modal-header {
+        padding: 1rem 1.25rem;
+    }
+    .modal-body {
+        padding: 1.15rem;
+    }
+    .projects-toolbar {
+        margin-bottom: 1rem;
+        gap: 0.75rem;
+    }
+    .projects-filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.65rem;
+    }
+    .filter-btn-group {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+    .filter-btn {
+        font-size: 0.74rem;
+        padding: 0.25rem 0.65rem;
     }
     .projects-container {
         grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    /* Command Palette */
+    .palette-overlay {
+        padding-top: 6vh;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .palette-card {
+        max-width: 100%;
+    }
+    .palette-search-wrapper {
+        padding: 0.75rem 1rem;
+    }
+    .palette-search-input {
+        font-size: 0.9rem;
+    }
+
+    /* Terminal Modal */
+    .terminal-card {
+        height: 75vh;
+        max-height: 480px;
+    }
+    .terminal-body {
+        padding: 0.85rem 1rem;
+        font-size: 0.78rem;
+    }
+
+    /* Footer */
+    .masterpiece-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+        padding: 1.25rem 0.25rem;
+    }
+    .footer-shortcuts {
+        justify-content: center;
+    }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Navbar compacting */
+    .top-navbar {
+        width: 96%;
+        padding: 0 0.55rem;
+        height: 48px;
+        top: 0.45rem;
+    }
+    .brand-name {
+        font-size: 0.82rem;
+    }
+    .brand-badge {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+    .cmd-label-text {
+        display: none !important;
+    }
+    .nav-btn.cmd-btn {
+        padding: 0.3rem 0.55rem;
+    }
+    .nav-btn {
+        padding: 0.28rem 0.5rem;
+        font-size: 0.72rem;
+    }
+    .kbd-badge {
+        font-size: 0.64rem;
+        padding: 0.05rem 0.3rem;
+    }
+
+    /* Masterpiece Wrapper */
+    .masterpiece-wrapper {
+        margin: 4.5rem auto 1.75rem;
+        width: 95%;
+        gap: 0.9rem;
+    }
+
+    /* Bento Cards */
+    .bento-card {
+        padding: 1.15rem;
+        border-radius: var(--radius-md);
+    }
+    .bento-hero {
+        padding: 1.25rem 0.85rem;
+    }
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    .hero-avatar-wrap {
+        width: 90px;
+        height: 90px;
+    }
+    .hero-bio {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+    .social-pill-btn {
+        padding: 0.28rem 0.55rem;
+        font-size: 0.72rem;
+    }
+
+    /* Key metrics */
+    .metric-number {
+        font-size: 1.35rem;
+    }
+    .metric-label {
+        font-size: 0.68rem;
+    }
+
+    /* Featured Header */
+    .bento-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.65rem;
+    }
+    .btn-open-explorer {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.76rem;
+    }
+
+    /* Cert Mini Card */
+    .cert-mini-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        padding: 0.75rem;
+    }
+    .cert-score-pill {
+        align-self: flex-start;
+    }
+
+    /* Modals */
+    .modal-overlay {
+        padding: 0.35rem;
+    }
+    .modal-card {
+        max-height: 95vh;
+        border-radius: var(--radius-md);
+    }
+    .modal-header {
+        padding: 0.85rem 1rem;
+    }
+    .modal-title {
+        font-size: 1rem;
+    }
+    .modal-body {
+        padding: 0.85rem 1rem;
+    }
+    .projects-search-input {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem 0.5rem 2.2rem;
+    }
+    html[lang="fa"] .projects-search-input {
+        padding: 0.5rem 2.2rem 0.5rem 0.75rem;
+    }
+    .project-item {
+        padding: 0.9rem;
+    }
+    .project-item-title {
+        font-size: 0.88rem;
+    }
+    .project-item-desc {
+        font-size: 0.78rem;
+    }
+    .btn-project {
+        font-size: 0.74rem;
+        padding: 0.28rem 0.65rem;
+    }
+    .toast-notification {
+        top: 3.8rem;
+        padding: 0.55rem 0.9rem;
+        font-size: 0.78rem;
+    }
+}
+
+/* Ultra-Compact Screens (e.g. Foldable phones / iPhone SE - max-width: 360px) */
+@media (max-width: 360px) {
+    .brand-name {
+        display: none;
+    }
+    .bento-metrics {
+        grid-template-columns: 1fr;
+    }
+    .hero-avatar-wrap {
+        width: 80px;
+        height: 80px;
+    }
+    .hero-title {
+        font-size: 1.35rem;
     }
 }

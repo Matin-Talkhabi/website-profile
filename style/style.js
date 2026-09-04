@@ -130,7 +130,7 @@
             metricsRepos: "Repositories & Open Source",
             metricsCerts: "Quera 100% Score Certifications",
             metricsScholar: "National Elites Scholar Recipient",
-            metricsDb: "Database Query Reduction",
+            metricsExp: "Years Active Experience",
 
             navExploreProjects: "Projects",
             navTerminal: "Terminal",
@@ -204,13 +204,13 @@
                 "توسعه‌دهنده فول‌استک",
                 "معمار جنگو و پایتون",
                 "متخصص ری‌اکت و فرانت‌اند مدرن",
-                "بهینه‌سازی دیتابیس (-۹۵٪ کوئری‌ها)",
+                "معماری و بهینه‌سازی دیتابیس",
                 "بورسیه بنیاد ملی نخبگان"
             ],
             metricsRepos: "پروژه‌ها و مخازن گیت‌هاب",
             metricsCerts: "مدارک نمره ۱۰۰٪ کامل کوئرا",
             metricsScholar: "برگزیده بورسیه بنیاد ملی نخبگان",
-            metricsDb: "کاهش کوئری پایگاه‌داده",
+            metricsExp: "سال تجربه توسعه و مهندسی",
 
             navExploreProjects: "پروژه‌ها",
             navTerminal: "ترمینال",
