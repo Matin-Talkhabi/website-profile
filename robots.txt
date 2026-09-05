@@ -1,0 +1,8 @@
+# https://matintalkhabi.ir/robots.txt
+# Optimization for Googlebot, Bingbot, and modern search crawlers
+
+User-agent: *
+Allow: /
+
+# Direct link to XML Sitemap
+Sitemap: https://matintalkhabi.ir/sitemap.xml

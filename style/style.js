@@ -114,7 +114,7 @@
        ========================================================================== */
     const translations = {
         en: {
-            siteTitle: "Matin Talkhabi - Full-Stack Developer & Technical Lead",
+            siteTitle: "Matin Talkhabi | متین تلخابی - Full-Stack Developer & Technical Lead",
             status: "Available for opportunities",
             scholarBadge: "National Elites Foundation Scholar",
             name: "Matin Talkhabi",
@@ -194,7 +194,7 @@
             toastSoundToggled: "Sound effects: "
         },
         fa: {
-            siteTitle: "متین تلخابی - توسعه‌دهنده فول‌استک و سرپرست فنی",
+            siteTitle: "متین تلخابی | Matin Talkhabi - توسعه‌دهنده فول‌استک و سرپرست فنی",
             status: "آماده برای پروژه‌ها و همکاری",
             scholarBadge: "بورسیه بنیاد ملی نخبگان",
             name: "متین تلخابی",

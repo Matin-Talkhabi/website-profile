@@ -147,7 +147,8 @@ Then visit `http://localhost:8000` in your browser.
    ```
 2. On GitHub, go to **Repository Settings** > **Pages**.
 3. Under **Build and deployment**, set **Source** to `Deploy from a branch`, branch `main`, and folder `/ (root)`.
-4. Your website is live at: `https://matin-talkhabi.github.io/website-profile/`.
+4. Your website is live at your custom domain: `https://matintalkhabi.ir/` (or `https://matin-talkhabi.github.io/website-profile/`).
+5. SEO assets including `robots.txt`, `sitemap.xml`, OpenGraph tags, and Schema.org Knowledge Graph are preconfigured for `https://matintalkhabi.ir/`.
 
 ---
 
