@@ -170,7 +170,51 @@
     }
     </script>
 
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="preload" href="style/style.css" as="style" onload="this.rel='stylesheet'">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Project",
+      "name": "Royal Novin E‑commerce Ecosystem",
+      "url": "https://novintoshak.ir/",
+      "description": "پلتفرم تجارت الکترونیک مقیاس‌پذیر با بک‑اند Django و فرانت‑اند React.",
+      "image": "https://matintalkhabi.ir/style/avatar.jpg",
+      "author": {"@type": "Person", "name": "Matin Talkhabi"}
+    },
+    {
+      "@type": "Project",
+      "name": "Digikala Warehouse Capacity Monitor",
+      "url": "https://github.com/Matin-Talkhabi/warehouse-monitor",
+      "description": "نظارت لحظه‌ای بر ظرفیت انبار فروشندگان دیجی‌کالا و اعلان SMS.",
+      "author": {"@type": "Person", "name": "Matin Talkhabi"}
+    },
+    {
+      "@type": "Project",
+      "name": "Dong‑Bot: Group Expense Bot",
+      "url": "https://github.com/Matin-Talkhabi/Dong-Bot",
+      "description": "ربات تلگرام تقسیم هزینه گروهی با گزارش تاریخچه.",
+      "author": {"@type": "Person", "name": "Matin Talkhabi"}
+    }
+  ]
+}
+</script>
+<link rel="preload" href="style/style.js" as="script">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://matintalkhabi.ir/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -253,7 +297,7 @@
                     <div class="hero-avatar-wrap">
                         <div class="hero-avatar-ring"></div>
                         <div class="hero-avatar-inner">
-                            <img src="style/avatar.jpg" alt="متین تلخابی - Matin Talkhabi - برنامه‌نویس فول‌استک و سرپرست فنی" class="hero-avatar-img" width="120" height="120" fetchpriority="high">
+                            <img src="style/avatar.jpg" alt="متین تلخابی - Matin Talkhabi - برنامه‌نویس فول‌استک و سرپرست فنی" class="hero-avatar-img" width="120" height="120" fetchpriority="high" loading="lazy">
                         </div>
                     </div>
 
